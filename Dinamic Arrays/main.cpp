@@ -5,6 +5,9 @@ using namespace std;
 void FillRand(int arr[], const int n);
 void Print(int arr[], const int n);
 
+/* Функции принимают размер массива по ссылке int& n для того чтоб функция могла изменить размер массива
+т.е. когда мы добавляем в массив элемент, то количество элементов возрастает на 1 еденицу*/
+
 int* push_back(int arr[], int& n, int value); // Добавляет значение в конец массива
 int* push_front(int arr[], int& n, int value); // Добавляет значение в начало массива
 int* insert(int arr[], int& n, int index, int value); // Вставляет значение в массив по индексу
